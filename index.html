@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="./js/app.js"></script>
+    <title> Brew Memory </title>
+</head>
+<body>
+        <div id="welcome" >
+        <h6 id="title"> BREW MEMORY </h6>
+        <h4 id="subtitle"> Memorize the recipe, beat the clock, and brew it right ! </h4>
+        <img id="coffeeShop" src="https://i.imgur.com/XPvtc9Y.png">
+        <img id="barista" src="https://i.imgur.com/zHy2FqS.png">
+         <div class="buttons">
+            <button id="start"> Start Game </button>
+            <button id="help"> How to Play </button>
+        </div>
+
+        <div id="play" class="hidden">
+            <p id="para">"You have just been hired as a trainee barista at Brew Memory Café. The customers here are picky! To earn your place, you must prove your memory and speed by brewing the cafes top drinks. Each stage brings new challenges, tougher recipes, and higher pressure. Will you survive the rush to land the job ?"</p>
+            <button id="next"> ↪ </button>
+        </div>
+
+        <div id="instructions" class="hidden">
+            <h1>How to play ?</h1>
+            <p><span id="one">1. 4 Levels: </span>Each level has 2 recipes that get harder as you progress.</p>
+            <p><span id="one">2. Memorize the Recipe: </span>You get to view the recipe card before clicking on the ingredients button to make your own.</p>
+            <p><span id="one">3. Click on Ingredients: </span>Select the ingredients and try to guess the missing ones.</p>
+            <p><span id="one">4. Lives: </span>You start with 3 lives. Any missing or wrong ingredient costs a life.</p>
+            <p><span id="one">5. Win Condition: </span>Survive all recipes and you will be officially hired as the café’s star barista!</p>
+            <button id="next2"> ↪ </button>
+        </div>
+
+        </div>
+
+<div id="timer">
+  <div class="timerBar"></div>
+  <span id="countdown">30</span>
+</div>
+
+        <div id="pic" class="hidden">
+    <div id="level1">
+
+    <h5 id="head"> Level 1 </h5>
+
+
+  <div id="drinks">
+    <button class="drinkBtn" id="Latte">
+      <img src="https://i.imgur.com/fCudEMy.png" alt="Latte">
+      <span>Latte</span>
+    </button>
+    <button class="drinkBtn" id="Americano">
+      <img src="https://i.imgur.com/P1HpbSH.png" alt="Americano">
+      <span>Americano</span>
+    </button>
+  </div>
+
+  <div id="baristaWrap">
+    <img id="barista1" src="https://i.imgur.com/zHy2FqS.png" alt="Barista">
+    <img id="speechBubble" src="https://i.imgur.com/ZbEWzEh.png" alt="Speech Bubble">
+    <div id="speechText">Let's start brewing easy! You have 3 lives. Choose one drink. </div>
+  </div>
+
+  <div id="recipeCard1" class="hidden">
+    <h2>Latte</h2>
+    <p>Espresso + Steamed Milk</p>
+    <button class="goBtn">Go to Ingredients</button>
+  </div>
+
+  <div id="recipeCard2" class="hidden">
+    <h2>Americano</h2>
+    <p>Espresso + Water + Ice Cubes</p>
+    <button class="goBtn">Go to Ingredients</button>
+  </div>
+
+</div>
+</div>
+
+<div id="level2" class="hidden">
+
+    <h5 id="head"> Level 2 </h5>
+ 
+<div id="drinks">
+  <button class="drinkBtn" id="VanillaLatte">
+    <img src="https://i.imgur.com/uhM7yI1.png" alt="Vanilla Latte">
+    <span>Vanilla Latte</span>
+  </button>
+  <button class="drinkBtn" id="Cappuccino">
+    <img id="cuppa" src="https://i.imgur.com/5bJKhgJ.png" alt="Cappuccino">
+    <span>Cappuccino</span>
+  </button>
+</div>
+
+  <div id="baristaWrap">
+    <img id="barista1" src="https://i.imgur.com/zHy2FqS.png" alt="Barista">
+    <img id="speechBubble" src="https://i.imgur.com/ZbEWzEh.png" alt="Speech Bubble">
+    <div id="speechText"> Congrats ! you're qualified for level 2. Choose a drink. </div>
+  </div>
+
+ <div id="recipeCard3" class="hidden">
+  <h2>Vanilla Latte</h2>
+  <p>Espresso + Steamed Milk + ???</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+<div id="recipeCard4" class="hidden">
+  <h2>Cappuccino</h2>
+  <p>Espresso + Steamed Milk + ???</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+</div>
+</div>
+
+<div id="level3" class="hidden">
+
+    <h5 id="head"> Level 3 </h5>
+<div id="drinks">
+  <button class="drinkBtn" id="CaramelMacchiato">
+    <img src="https://i.imgur.com/74zsMYd.png" alt="Caramel Macchiato">
+    <span>Caramel Macchiato</span>
+  </button>
+  <button class="drinkBtn" id="Mocha">
+    <img src="https://i.imgur.com/YiYokSK.png" alt="Mocha">
+    <span>Mocha</span>
+  </button>
+</div>
+
+  <div id="baristaWrap">
+    <img id="barista1" src="https://i.imgur.com/zHy2FqS.png" alt="Barista">
+    <img id="speechBubble" src="https://i.imgur.com/ZbEWzEh.png" alt="Speech Bubble">
+    <div id="speechText"> Amazing ! Brewed 4 drinks already ! Beat the timer to the final level. </div>
+  </div>
+
+<div id="recipeCard5" class="hidden">
+  <h2>Caramel Macchiato</h2>
+  <p>??? + Steamed Milk + ??? + Caramel Drizzle</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+<div id="recipeCard6" class="hidden">
+  <h2>Mocha</h2>
+  <p>??? + ??? + Chocolate Syrup + Whipped Cream</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+
+</div>
+</div>
+
+<div id="level4" class="hidden">
+
+    <h5 id="head"> Level 4 </h5>
+
+<div id="drinks">
+  <button class="drinkBtn" id="FlatWhite">
+    <img src="https://i.imgur.com/1t6iVgY.png" alt="Flat White">
+    <span>Flat White</span>
+  </button>
+  <button class="drinkBtn" id="Affogato">
+    <img id="affo" src="https://i.imgur.com/0P01apv.png" alt="Affogato">
+    <span>Affogato</span>
+  </button>
+</div>
+
+  <div id="baristaWrap">
+    <img id="barista1" src="https://i.imgur.com/zHy2FqS.png" alt="Barista">
+    <img id="speechBubble" src="https://i.imgur.com/ZbEWzEh.png" alt="Speech Bubble">
+    <div id="speechText"> Brew master ! FINAL LEVEL ! take the job after 2 more coffee's . </div>
+  </div>
+
+<div id="recipeCard7" class="hidden">
+  <h2>Flat White</h2>
+  <p>??? + ??? + ???</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+<div id="recipeCard8" class="hidden">
+  <h2>Affogato</h2>
+  <p>Vanilla Ice Cream + ??? + ??? + ???</p>
+  <button class="goBtn">Go to Ingredients</button>
+</div>
+
+  </div>
+
+</div>
+<div id="ingWrap" class="hidden">
+<div id="ingredientsPage" >
+    <img id="bimage" src="https://i.imgur.com/48nOYqx.jpeg">
+    </div>
+    <div id="button">
+    <button id="delete"> Clear Cup </button>
+    <button id="submit"> Complete </button>
+</div>
+<div>
+    <div id="cup">
+    <img id="empty" src="https://i.imgur.com/oYlZETG.png">
+    </div>
+</div>
+<div id="look">
+<div id="barista2">
+    <img id="barista3" src="https://i.imgur.com/zHy2FqS.png" alt="Barista">
+    <img id="speechBubble2" src="https://i.imgur.com/ZbEWzEh.png" alt="Speech Bubble">
+    <div id="speechText2"> Find the right ingredients, before running out of time ! </div>
+  </div>
+  <div id="rack1">
+  <input type="image" class="ingredientsPage" id="one" data-name="Espresso" src="https://i.imgur.com/gfm2yJN.png">
+    <input type="image" class="ingredientsPage" id="two" data-name="Ice" src="https://i.imgur.com/Oe4Qs9V.png">
+    <input type="image" class="ingredientsPage" id="three" data-name="Water" src="https://i.imgur.com/7SZglsR.png">
+    <input type="image" class="ingredientsPage"  id="four" data-name="VanillaSyrup" src="https://i.imgur.com/BmUSY0j.png">
+    <input type="image" class="ingredientsPage"  id="five" data-name="VanillaBean" src="https://i.imgur.com/U6AqMAg.png">
+    <input type="image" class="ingredientsPage" id="six" data-name="Milk" src="https://i.imgur.com/HXXqOyK.png">
+    </div>
+    <div id="rack2">
+    <input type="image" class="ingredientsPage" id="seven" data-name="CaramelSyrup" src="https://i.imgur.com/oiRuYrs.png">
+    <input type="image" class="ingredientsPage" id="eight" data-name="Sugar" src="https://i.imgur.com/W6R4vNH.png">
+    <input type="image" class="ingredientsPage" id="nine" data-name="Chocolate" src="https://i.imgur.com/F2b6edq.png">
+    <input type="image" class="ingredientsPage" id="ten" data-name="whipCream" src="https://i.imgur.com/phNr1sA.png">
+    <input type="image" class="ingredientsPage" id="eleven" data-name="IceCream" src="https://i.imgur.com/3Z2DZ8s.png">
+    </div>
+</div>
+</div>
+
+<div id="hud-bottom">
+  <div id="lives" class="hidden">
+    <img id="live1" src="https://i.imgur.com/5wVSWJO.png">
+    <img id="live2" src="https://i.imgur.com/5wVSWJO.png">
+    <img id="live3" src="https://i.imgur.com/5wVSWJO.png">
+  </div>
+</div>
+
+<div id="right" class="hidden">
+    <p id="celebrate">🎉🎉🎉</p>
+        <h3 id="fix"> YOU WON ! YOU SUCCESSFULLY COMPLETED ALL LEVELS AND YOU ARE QUALIFIED FOR THE JOB. </h3>
+            <button id="BackTo"> Back To Welcome Page </button>
+</div>
+
+<div id="wrong" class="hidden">
+    <p id="celebrate">☠️☠️☠️</p>
+    <h3 id="fix"> OOPS ! YOU LOST ALL YOUR LIVES. YOU LOSE !</h3>
+    <button id="PlayAgain"> Play Again </button>
+</div>
+
+<div id="timeUp" class="hidden">
+    <p id="celebrate">☠️☠️☠️</p>
+    <h3 id="fix"> TIME IS UP ! YOU COULDN'T MAKE IT ON TIME. YOU LOSE !</h3>
+    <button id="PlayAgain2"> Play Again </button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+.hidden {
+    display: none;
+}
+
+body {
+background-color: #e0d4c0;
+margin: 0;
+padding: 0;
+}
+
+#title {
+     font-size: 120px;
+     font-family: "Silkscreen";
+     font-weight: 400;
+     font-style: normal;
+     text-align: center;
+     margin-top: 30px;
+     color: #392b21;
+     animation: neonGlow 2s infinite ease-in-out
+}
+
+#subtitle {
+  font-size: 30px;  
+  font-family: "Handjet";
+  text-align: center;
+  margin-top: -250px;
+  color: #638c3e;
+}
+
+.buttons {
+    margin-left: 150px;
+    margin-top: -120px;
+}
+
+#coffeeShop {
+    width: 600px;
+    margin-top: -35px;
+    margin-left: 800px;
+    position: absolute;
+    z-index: 2;
+}
+ #barista {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 460px;
+ }
+
+ #barista1 {
+    width: 400px;
+    margin-top: -250px;
+ }
+#start, #help, #submit, #delete {
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 50px;
+font-size: 40px;
+font-weight: bold;
+background-color: #dd5d1f;
+font-family: "Handjet";
+text-align: center;
+color: azure;
+border: 2px dotted azure;
+}
+#start:hover {
+  background-color: #ce5b04;
+  color: #392b21;
+  box-shadow: 0 0 15px #ce5b04;
+}
+#help:hover {
+  background-color: #ce5b04;
+  color: #392b21;
+  box-shadow: 0 0 15px #ce5b04;
+}
+#play, #instructions {
+    height:500px;
+    width: 1000px;
+    text-align: center;
+    background-color:#7f9a67 ;
+    border-radius: 50px;
+    padding-bottom:20px ;
+    padding-top: 20px;
+    margin-top: 120px;
+    margin-left: 250px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 4px solid #dd5d1f;
+    color: #ddd;
+    text-align: justify;
+    font-size: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#play {
+    text-align: justify;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 190px;
+}
+
+#para {
+    font-size: 42px;
+    line-height: 55px;
+    padding-bottom: 30px;
+}
+#play, #instructions{
+    position: absolute;
+    z-index: 2;
+    margin-top: -620px;
+    animation: neonGlow 2s infinite ease-in-out
+}
+#instructions {
+    font-size: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 190px;
+}
+p {
+    font-size: 30px;
+    text-align: left;
+    line-height: 35px;
+    font-family: "Handjet";
+
+}
+h1, #head  {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: "Silkscreen";
+    font-weight: 100;
+}
+
+#head {
+    text-align: center;
+    color: #392b21;
+}
+h2 {
+    font-family: "Silkscreen";
+    font-weight: 100;
+}
+#one {
+        background-color: #7f9a67;
+        font-weight: bold;
+}
+#next, #next2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ddd;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:transparent ;
+    border-color: transparent;
+    margin-top: -40px;
+}
+#next2 {
+     margin-top: -20px;
+     margin-left: 940px;
+}
+#next {
+    margin-left: 940px;
+    margin-top: 40px;
+}
+
+#pic {
+   background-image: url('https://i.imgur.com/48nOYqx.jpeg');
+   background-size: cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+#level1, #level2, #level3, #level4 {
+  height: 600px;
+  width: 1000px;
+  background-color: #ad7b51;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: 250px;
+  text-align: center;
+  color: white;
+  font-family: "Handjet";
+}
+
+#timer {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ddd;
+  border-radius: 10px;
+  width: 1000px;  
+  height: 30px;
+  z-index: 1000;
+}
+
+.timerBar {
+  height: 100%;
+  width: 0%; 
+  background: #4caf50;
+  transition: width 1s linear;
+}
+
+#countdown {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-family: "Handjet", sans-serif;
+  color: #333;
+}
+
+#drinks {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 30px;
+}
+.drinkBtn {
+  border: none;
+  background: #e2bd96;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* animation application */
+}
+.drinkBtn img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+#cuppa, #affo {
+height: 80px;
+}
+.drinkBtn span {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.drinkBtn:hover { transform: scale(1.1); } /* animation when hover */
+.drinkBtn:active { transform: scale(0.95); } /* animation when click */
+
+#baristaWrap {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+#barista1 {
+  width: 250px;
+  margin-left: -750px;
+}
+#barista3 {
+    width: 250px;
+}
+#barista2 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 380px;
+}
+#speechBubble {
+  position: absolute;
+  top: -400px;
+  left: -450px;
+  width: 200px; 
+}
+#speechBubble2 {
+ position: absolute;
+  left: 90px;
+  width: 200px; 
+  margin-top: -150px;
+}
+#speechText {
+  position: absolute;
+  top: -350px; 
+  left: -430px;
+  width: 160px;
+  text-align: center;
+  font-family: "Handjet", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+#speechText2 {
+  position: absolute;
+  left:110px ;
+  margin-top: -350px;
+  width: 160px;
+  text-align: center;
+  font-family: "Handjet", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+#recipeCard1, #recipeCard3, #recipeCard5, #recipeCard7 {
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #9c543e;
+  width: 200px;
+  margin-top: -260px;
+  margin-left: 750px;
+}
+#recipeCard2, #recipeCard4, #recipeCard6, #recipeCard8 {
+  margin-top: 55px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #9c543e;
+  width: 200px;
+  margin-top: -260px;
+  margin-left: 750px;
+}
+#hud-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: -110px;
+  margin-left: 500px;
+  position: absolute;
+  z-index: 2;
+}
+#lives {
+ position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  gap: 10px;
+  z-index: 2;
+  margin-left: -70px;
+}
+#lives img {
+    width: 50px;
+}
+#lives img.lost {
+  opacity: 0.3;
+  transform: scale(0.8); /*when a life is lost opacity turns lighter*/
+}
+
+.goBtn {
+    border:5px #392b21;
+    font-size: 20px;
+    font-family: "Handjet";
+    border-radius: 15px;
+    padding: 20 auto;
+}
+
+#bimage {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#submit {
+    font-size: 25px;
+    background-color:#51321c;
+    border:3px dotted #ddd;
+    position: absolute;
+    z-index: 2;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 550px;
+    margin-left: 1300px;
+}
+#delete {
+    font-size: 25px;
+    background-color:#51321c;
+    border:3px dotted #ddd;
+    position: absolute;
+    z-index: 2;
+    padding-left: 70px;
+    padding-right: 70px; 
+    margin-top: 450px;
+    margin-left: 1300px;
+}
+#submit:hover {
+  background-color: #51321c;
+  color: #ff6a00;
+  box-shadow: 0 0 15px #51321c;
+}
+#delete:hover {
+  background-color: #51321c;
+  color: #ff6a00;
+  box-shadow: 0 0 15px #51321c;
+}
+#PlayAgain:hover {
+background-color: #51321c;
+  color: #ff6a00;
+  box-shadow: 0 0 15px #51321c;
+}
+#PlayAgain2:hover {
+background-color: #51321c;
+  color: #ff6a00;
+  box-shadow: 0 0 15px #51321c;
+}
+#BackTo:hover {
+background-color: #51321c;
+  color: #ff6a00;
+  box-shadow: 0 0 15px #51321c;
+}
+#empty {
+width: 270px;
+position: absolute;
+z-index: 2;
+margin-top: 500px;
+margin-left: 650px;
+}
+.ingredientsPage {
+width: 100px;
+height: 100px;
+margin-left: 35px;
+margin-top: -55px;
+}
+.ingredient-clicked {
+  transform: scale(0.9);
+  opacity: 0.7;
+  transition: transform 0.2s, opacity 0.2s; /*animation when any ingredient is clicked to show that it has been clicked*/
+}
+#look {
+    position: absolute;
+    z-index: 2;
+}
+#rack1, #one {
+    background-color: transparent;
+    margin-top: 10px;
+}
+#one {
+    margin-left: 10px;
+}
+#two {
+    margin-left: 15px;
+}
+#three {
+    margin-left: 20px;
+    margin-top: 20px ;
+    width: 140px;
+    height: 150px;
+}
+#four {
+    margin-left: 15px;
+    height: 110px;
+}
+#five {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 120px;
+}
+#six {
+    margin-left: -30px;
+    width: 130px;
+    height: 140px;
+}
+#rack2 {
+    background-color: transparent;
+    margin-left: 750px;
+    margin-top: -30px;
+}
+#seven {
+    width: 130px;
+    height: 140px;
+}
+#eight {
+    width: 130px;
+    height: 110px;
+    margin-left: 15px;
+}
+#nine {
+    width: 120px;
+}
+#ten {
+    width: 120px;
+    height: 190px;
+    margin-left: 20px;
+}
+#eleven {
+    width: 130px;
+    margin-top: -220px;
+}
+.completed-recipe {
+  opacity: 0.5;        
+  transform: scale(0.95); /* shrinking */
+  transition: all 0.3s ease;
+}
+ #celebrate {
+  font-size: 40px;
+  text-align: center;
+ }
+
+#right {          
+    width: 600px;
+    height: 400px;
+    background-color: #f6ebe1;
+    border-radius: 40px;
+    font-family: "Handjet", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 130px;
+    margin-left: 400px;
+}
+#wrong {   
+    width: 600px;
+    height: 400px;
+    background-color: #f6ebe1;
+    border-radius: 40px;
+    font-family: "Handjet", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 130px;
+    margin-left: 400px;
+    position: absolute;
+    z-index: 1000;
+}
+#timeUp {
+    width: 600px;
+    height: 400px;
+    background-color: #f6ebe1;
+    border-radius: 40px;
+    font-family: "Handjet", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 140px;
+    margin-left: 400px;
+    position: absolute;
+    z-index: 1000;
+}
+#PlayAgain, #PlayAgain2, #BackTo {
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 50px;
+font-size: 40px;
+font-weight: bold;
+background-color: #dd5d1f;
+font-family: "Handjet";
+text-align: center;
+color: azure;
+border: 2px dotted azure;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #774623, 0 0 10px #392b21;
+  }
+  50% {
+    text-shadow: 0 0 10px #392b21, 0 0 20px #392b21, 0 0 40px #392b21;
+  }
+  100% {
+    text-shadow: 0 0 5px #392b21, 0 0 10px #392b21;
+  }
+}
