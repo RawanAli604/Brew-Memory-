@@ -84,8 +84,13 @@ function hideUI() {
     document.querySelector('#lives').classList.add('hidden');
 }
     hideUI();
-    bmusic.currentTime= 0;
-    bmusic.play();
+    
+// start the music 
+document.addEventListener('click', () => {
+  bmusic.currentTime= 0;
+  bmusic.play();
+});
+
 // displaying functions when time is up, run out of lives or win
 function displayWin() {
     document.querySelector('#timer').classList.add('hidden');
