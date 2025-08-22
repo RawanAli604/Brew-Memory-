@@ -17,6 +17,10 @@ Choose the right ingredients, be precise with your choices and prove you've got 
 ⦁	Complete the 2 drinks across the 4 levels
 ⦁	Avoid any mistake ( you have only 3 lives ! )
 
+➡️ Deployed game link : https://rawanali604.github.io/Brew-Memory-/
+
+➡️ [Brew Memory welcome page](vscode-local:/c%3A/Users/rawan/OneDrive/Pictures/Screenshots/Screenshot%202025-08-23%20015257.png)
+
 
 🕹️ How to Play
 
@@ -26,12 +30,48 @@ Choose the right ingredients, be precise with your choices and prove you've got 
 ⦁	Player click ingredients to add them to the cup.
 ⦁	Clear button to empty the cup if you made a mistake.
 ⦁	Submit button to check if your drink matches the recipe.
-⦁	Automatically going back to the level if you didn't complete the other drink, and the second drink recipe will be already displayed to save time.
+⦁	Automatically going back to the level if you didn't complete the  other drink, and the second drink recipe will be already displayed to save time.
 ⦁	Some recipes will have missing ingredients you must guess them correctly!
 ⦁	Complete both recipes in a level to progress to the next one.
 
 
-👤 User Stories
+⌂ Attributions
+⦁ sound effects: https://pixabay.com/sound-effects/
+⦁ game picture: https://www.cleanpng.com/free/cafe.html
+⦁ fonts: https://fonts.google.com/
+
+
+⌂ Technologies Used
+
+⦁ HTML – for structuring the game interface.
+
+⦁ CSS – for styling, animations, and the visual layout (ingredient clicks, timer bar, fading beans).
+
+⦁ JavaScript – for game logic, event handling, countdown timer, ingredient selection, and level progression.
+
+⦁ Audio APIs – for background music, click sounds, hover effects, and tick timer.
+
+⦁ DOM Manipulation – dynamically showing/hiding recipe cards, updating cups, lives, and levels.
+
+
+
+⌂ Next Steps
+
+⦁ Add more levels with advanced coffee recipes.
+
+⦁ Add difficulty modes with shorter timer, more ingredients, and mystery recipes.
+
+⦁ Implement a score system to track high scores.
+
+⦁ Make the game mobile-friendly and responsive.
+
+⦁ Add visual effects or animations for correct/incorrect ingredients.
+
+⦁ Include customizable avatars and barista outfits for player engagement.
+
+
+
+⌂ User Stories
 
 ⦁	As a user, I want to see a welcome page with an instruction button to understand how to play.
 ⦁	As a user, I want to observe a clear message for every level.
@@ -47,7 +87,8 @@ Choose the right ingredients, be precise with your choices and prove you've got 
 ⦁	As a user, I want to see a clear winning message, with a back to welcome page button.
 
 
-📐 Pseudocode
+
+⌂ Pseudocode
 
 // declare the game audios used as mp3.
 
