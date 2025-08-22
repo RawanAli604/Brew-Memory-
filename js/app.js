@@ -87,8 +87,10 @@ function hideUI() {
     
 // start the music 
 document.addEventListener('click', () => {
+  if(!bmusic.play() && ( !displayLose() || !displayTimeLose() || !displayWin())){
   bmusic.currentTime= 0;
   bmusic.play();
+  } 
 });
 
 // displaying functions when time is up, run out of lives or win
