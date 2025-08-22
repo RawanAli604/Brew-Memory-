@@ -82,11 +82,10 @@ let selectedRecipe = null;
 function hideUI() {
     document.querySelector('#timer').classList.add('hidden');
     document.querySelector('#lives').classList.add('hidden');
+}
+    hideUI();
     bmusic.currentTime= 0;
     bmusic.play();
-}
-hideUI();
-
 // displaying functions when time is up, run out of lives or win
 function displayWin() {
     document.querySelector('#timer').classList.add('hidden');
