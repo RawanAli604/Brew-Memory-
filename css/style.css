@@ -461,7 +461,7 @@ margin-top: -55px;
 #rack2 {
     background-color: transparent;
     margin-left: 750px;
-    margin-top: -220px;
+    margin-top: -40px;
 }
 #seven {
     width: 130px;
@@ -482,8 +482,8 @@ margin-top: -55px;
 }
 #eleven {
     width: 130px;
-    margin-top: 220px;
 }
+
 .completed-recipe {
   opacity: 0.5;        
   transform: scale(0.95); /* shrinking */
