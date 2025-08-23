@@ -461,11 +461,12 @@ margin-top: -55px;
 #rack2 {
     background-color: transparent;
     margin-left: 750px;
-    margin-top: -40px;
+    margin-top: -90px;
 }
 #seven {
     width: 130px;
     height: 140px;
+    margin-top: 40px;
 }
 #eight {
     width: 130px;
@@ -482,6 +483,8 @@ margin-top: -55px;
 }
 #eleven {
     width: 130px;
+    margin-left: 670px;
+    margin-top: -110px;
 }
 
 .completed-recipe {
