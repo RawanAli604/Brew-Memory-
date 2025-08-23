@@ -170,6 +170,7 @@ h2 {
    width: 100%;
    height: 100%;
 }
+
 #level1, #level2, #level3, #level4 {
   height: 600px;
   width: 1000px;
@@ -182,6 +183,10 @@ h2 {
   text-align: center;
   color: white;
   font-family: "Handjet";
+}
+
+#level2,#level3, #level4 {
+  position: absolute;
 }
 
 #timer {
@@ -531,6 +536,7 @@ margin-top: -55px;
     position: absolute;
     z-index: 1000;
 }
+
 #PlayAgain, #PlayAgain2, #BackTo {
 padding-top: 20px;
 padding-bottom: 20px;

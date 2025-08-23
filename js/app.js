@@ -437,6 +437,7 @@ submit.addEventListener('click', () => {
       if (currentLevel < totalLevels) {
         currentLevel++;
         let current2 =levels[currentLevel - 1];
+        document.querySelector("#pic").classList.remove('hidden');
         current2.classList.remove('hidden');
         document.querySelector('#speechText').textContent = `Level ${currentLevel}: Choose a drink!`;
         startCountdown(30);
@@ -456,6 +457,7 @@ submit.addEventListener('click', () => {
         document.querySelector("#ingWrap").classList.add('hidden');
         speech.textContent = "Great! Complete the remaining recipe in this level.";
       } else {
+      document.querySelector("#pic").classList.remove('hidden');
       current.classList.remove('hidden');
       document.querySelector("#ingWrap").classList.add('hidden');
       speech.textContent = "Great! Complete the remaining recipe in this level.";
